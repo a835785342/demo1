@@ -6,6 +6,7 @@
     <modules>
         <module>limit-rate</module>
         <module>thread</module>
+        <module>base-type</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
