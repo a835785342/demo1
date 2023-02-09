@@ -8,6 +8,7 @@
         <module>thread</module>
         <module>base-type</module>
         <module>map-class</module>
+        <module>data-structure</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
