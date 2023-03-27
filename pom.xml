@@ -11,6 +11,7 @@
         <module>data-structure</module>
         <module>IO</module>
         <module>design-pattern</module>
+        <module>springweb</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

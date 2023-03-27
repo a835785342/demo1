@@ -1,0 +1,7 @@
+server:
+  tomcat:
+    threads:
+      max: 100
+    max-connections: 2
+    keep-alive-timeout: 30000
+  port: 8081
