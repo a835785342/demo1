@@ -2,11 +2,17 @@ package webapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import webapp.bean.UserBean;
 
-@SpringBootApplication
+//@SpringBootApplication
 public class SpringWebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringWebApplication.class, args);
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
+        UserBean user = (UserBean) applicationContext.getBean("userBean");
+        ((AbstractApplicationContext) applicationContext).close();
     }
 }

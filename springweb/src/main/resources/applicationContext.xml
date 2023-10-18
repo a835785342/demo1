@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+	    http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+">
+    <context:annotation-config/>
+
+    <bean class="webapp.postProcessor.MyInstantiationAwareBeanPostProcessor" />
+
+    <bean id="userBean" class="webapp.bean.UserBean" init-method="myInit" destroy-method="myDestroy">
+        <!-- 构造函数注入 -->
+        <constructor-arg index="0" type="int">
+            <value>1</value>
+        </constructor-arg>
+        <constructor-arg index="1" type="java.lang.String">
+            <value>微信公众号【老周聊架构】</value>
+        </constructor-arg>
+
+        <!-- setter方法注入 -->
+        <property name="id" value="2"/>
+        <property name="name" value="riemann"/>
+    </bean>
+
+    <bean class="webapp.postProcessor.MyBeanPostProcessor" />
+
+    <bean class="webapp.postProcessor.MyBeanFactoryPostProcessor" />
+
+</beans>

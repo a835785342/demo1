@@ -8,8 +8,7 @@ public class FileChannelDemo {
     public static void main(String[] args) throws Exception {
         //读写demo
         readAndWrite();
-
-
+        
 
     }
 

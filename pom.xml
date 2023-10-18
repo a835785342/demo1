@@ -12,6 +12,8 @@
         <module>IO</module>
         <module>design-pattern</module>
         <module>springweb</module>
+        <module>zhouyu-springboot</module>
+        <module>user</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -37,6 +39,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>27.0.1-jre</version>
         </dependency>
     </dependencies>
 
