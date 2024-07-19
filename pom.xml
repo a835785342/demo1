@@ -7,13 +7,16 @@
         <module>limit-rate</module>
         <module>thread</module>
         <module>base-type</module>
-        <module>map-class</module>
+        <module>collection-class</module>
         <module>data-structure</module>
         <module>IO</module>
         <module>design-pattern</module>
         <module>springweb</module>
         <module>zhouyu-springboot</module>
         <module>user</module>
+        <module>mybatiscodehelper-crack</module>
+        <module>other</module>
+        <module>log</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
